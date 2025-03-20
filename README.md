@@ -1,3 +1,9 @@
+#Residential: We handle lighting, panel upgrades, and repairs to ensure safe home power.
+Commercial: Energy-efficient systems to boost performance and reduce costs.
+Industrial: Custom solutions for factories and warehouses, minimizing downtime and enhancing efficiency.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
