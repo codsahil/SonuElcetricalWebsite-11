@@ -1,0 +1,319 @@
+/* Global Styles */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --danger-color: #dc3545;
+  --success-color: #198754;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --text-color: #8B4513;
+  --text-secondary: #A0522D;
+  --heading-color: #5D4037;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  letter-spacing: 0.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: var(--heading-color);
+  letter-spacing: -0.5px;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1.05rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+a:hover {
+  color: #0a58ca;
+}
+
+/* Enhanced Typography */
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* Utility Classes */
+.text-primary { color: var(--primary-color) !important; }
+.text-secondary { color: var(--text-secondary) !important; }
+.text-dark { color: var(--heading-color) !important; }
+.text-light { color: var(--light-color) !important; }
+.text-danger { color: var(--danger-color) !important; }
+.text-success { color: var(--success-color) !important; }
+.text-warning { color: var(--warning-color) !important; }
+.text-info { color: var(--info-color) !important; }
+
+.bg-primary { background-color: var(--primary-color) !important; }
+.bg-secondary { background-color: var(--secondary-color) !important; }
+.bg-dark { background-color: var(--dark-color) !important; }
+.bg-light { background-color: var(--light-color) !important; }
+.bg-danger { background-color: var(--danger-color) !important; }
+.bg-success { background-color: var(--success-color) !important; }
+.bg-warning { background-color: var(--warning-color) !important; }
+.bg-info { background-color: var(--info-color) !important; }
+
+/* App Container */
+/* Enhanced App styling */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a58ca;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Link hover effects */
+a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  transform: translateY(-2px);
+}
+
+/* Button hover effects */
+button, .btn {
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+/* Enhanced Text Contrast for Readability */
+.card-text, .card-title {
+  color: var(--text-color);
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.form-control, .form-label {
+  color: var(--text-color);
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+/* Ensure text is readable on dark backgrounds */
+.bg-dark, .bg-primary, .hero-section, .cta-section, .footer, .navbar-dark {
+  color: #ffffff;
+}
+
+.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6, 
+.bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6,
+.hero-section h1, .hero-section h2, .hero-section p,
+.cta-section h1, .cta-section h2, .cta-section p,
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p,
+.navbar-dark .nav-link {
+  color: #ffffff;
+}
+
+/* Enhanced Button Styling */
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0a58ca 0%, var(--primary-color) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.4);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* Enhanced Card Styling */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+/* Section Headers with Enhanced Styling */
+section h2 {
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+  color: var(--heading-color);
+}
+
+section h2:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #0a58ca);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* Override text-muted for better contrast */
+.text-muted {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+}
+
+/* Add subtle text shadows to headings for depth */
+.hero-section h1, .cta-section h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  background-color: #0a58ca;
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+}
+
+.footer-social-icons a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icons a:hover {
+  background-color: var(--primary-color);
+}

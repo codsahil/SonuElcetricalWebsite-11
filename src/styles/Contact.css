@@ -1,0 +1,148 @@
+/* Contact Hero Section */
+.contact-hero {
+  background-image: url('https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-16355.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 25, 25, 0.549);
+}
+
+.contact-hero .hero-overlay {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contact Cards */
+.contact-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  color: var(--primary-color);
+}
+
+/* Contact Form */
+.form-control {
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #86b7fe;
+}
+
+/* Map Section */
+.map-container {
+  height: 450px;
+  width: 100%;
+}
+
+.map-placeholder {
+  height: 100%;
+  width: 100%;
+}
+
+/* FAQ Section */
+.accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  font-weight: 600;
+  padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.accordion-body {
+  padding: 20px;
+}
+
+/* CTA Section */
+.cta-box {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 300px;
+  }
+  
+  .map-container {
+    height: 350px;
+  }
+}
+
+
+/* Footer Address Section */
+.footer-address {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-address h5 {
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-address p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-address .text-primary {
+  color: #0d6efd !important;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #0d6efd;
+  transform: translateY(-3px);
+}
